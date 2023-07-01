@@ -2,14 +2,21 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "main": "gulpfile.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "vite": "^4.3.9"
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.3",
+    "core-js": "^3.31.0",
+    "gulp": "^4.0.2",
+    "webpack": "^5.86.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -20,3 +27,6 @@
     "slick-carousel": "^1.8.1"
   }
 }
+
+
+
