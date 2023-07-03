@@ -3,6 +3,7 @@ import modals from "./modules/modals";
 import tabs from "./modules/tabs";
 import forms from "./modules/forms";
 import changeModalState from "./modules/changeModalState";
+import timer from "./modules/timer";
 
 window.addEventListener("DOMContentLoaded", () => {
   "use strict";
@@ -14,6 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
     type: "tree",
     profile: "",
   };
+
+  let deadline = "2023-09-01";
   changeModalState(modalState);
 
   modals();
@@ -32,4 +35,5 @@ window.addEventListener("DOMContentLoaded", () => {
     "inline-block"
   );
   forms(modalState);
+  timer(".container1", deadline);
 });
